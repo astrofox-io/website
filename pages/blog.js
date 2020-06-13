@@ -8,22 +8,16 @@ export default function Blog({ allPostsData }) {
   return (
     <Layout title="Blog">
       <h1 className="center">Astroblog</h1>
-      <div className="center">The latest updates on Astrofox</div>
+      <div className="center mb-5">The latest updates on Astrofox</div>
 
       {allPostsData.map(({ id, date, title, excerpt }) => (
-        <article key={id}>
+        <article key={id} className="mb-5">
+          <Date dateString={date} />
           <h3>
             <Link href={`/blog/${id}`}>
               <a>{title}</a>
             </Link>
           </h3>
-          <Date dateString={date} />
-          <p>{excerpt}</p>
-          <div>
-            <Link href={`/blog/${id}`}>
-              <a>Read More</a>
-            </Link>
-          </div>
         </article>
       ))}
     </Layout>

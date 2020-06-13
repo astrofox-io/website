@@ -83,6 +83,11 @@ svg {
   margin-top: 48px;
 }
 
+#footer .row {
+  font-size: 14px;
+  padding: 48px;
+}
+
 .header__title {
   display: flex;
   align-items: center;
@@ -118,11 +123,6 @@ svg {
 
 .header__links a:hover {
   color: #fafafa;
-}
-
-.footer {
-  font-size: 12px;
-  padding: 48px;
 }
 
 .screenshot {
@@ -239,6 +239,23 @@ svg {
 
 .blog-content {
   margin-top: 48px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-links svg {
+  fill: #8e8e8e;
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.social-links svg:hover {
+  fill: #fafafa;
 }
 
 .center {

@@ -3,6 +3,7 @@ import Layout from 'components/layout';
 import Block from 'components/block';
 import Discord from 'assets/discord.svg';
 import Reddit from 'assets/reddit.svg';
+import config from 'config/site.json';
 
 export default function Support() {
   return (
@@ -16,8 +17,8 @@ export default function Support() {
               feedback.
             </p>
             <div className="row pt-5 justify-content-between">
-              <Block title="Discord chat" icon={<Discord />} href="https://discord.gg/wJ6pyMZ" />
-              <Block title="Reddit" icon={<Reddit />} href="https://www.reddit.com/r/astrofox/" />
+              <Block title="Discord chat" icon={<Discord />} href={config.discordUrl} />
+              <Block title="Reddit" icon={<Reddit />} href={config.redditUrl} />
             </div>
           </div>
         </div>

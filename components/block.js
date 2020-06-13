@@ -9,9 +9,9 @@ export default function Block({ className, icon, title, href, children }) {
       {title && (
         <h2 className="block__title">
           {href ? (
-            <Link href={href}>
-              <a>{title}</a>
-            </Link>
+            <a href={href} target="_blank">
+              {title}
+            </a>
           ) : (
             title
           )}
