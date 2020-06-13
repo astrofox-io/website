@@ -3,28 +3,33 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="container">
-      <div className="header row">
-        <div className="col-xs-12 col-lg-6">
+    <header id="header" className="container">
+      <div className="row">
+        <div className="col-lg-6 col-sm-12">
           <div className="header__title">
-            <div className="header__logo">
-              <img src="/images/logo.png" width={36} height={36} />
-            </div>
-            <div className="header__name">
-              <Link href="/">Astrofox</Link>
-            </div>
+            <Link href="/">
+              <a>
+                <img src="/images/title.png" height={50} />
+              </a>
+            </Link>
           </div>
         </div>
-        <nav className="col-xs-12 col-lg-6">
+        <nav className="col-lg-6 col-sm-12">
           <ul className="header__links">
             <li>
-              <Link href="/download">Download</Link>
+              <Link href="/download">
+                <a>Download</a>
+              </Link>
             </li>
             <li>
-              <Link href="/blog">Blog</Link>
+              <Link href="/blog">
+                <a>Blog</a>
+              </Link>
             </li>
             <li>
-              <Link href="/support">Support</Link>
+              <Link href="/support">
+                <a>Support</a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import Video from 'components/video';
 
 const videos = [
   {
@@ -12,51 +13,28 @@ const videos = [
   { img: 'kaskade-disarm-you.jpg', url: '9PrUOYw88m0', alt: 'Kaskade - Disarm You' },
 ];
 
-class Videos extends Component {
-  state = {
-    url: videos[0].url,
-  };
+export default function Videos() {
+  const [video, setVideo] = useState(videos[0].url);
 
-  showVideo = url => this.setState({ url });
-
-  render() {
-    const { url: videoUrl } = this.state;
-
-    return (
-      <section className="videos row justify-content-center">
-        <div className="col">
-          <h1>Unleash your creativity</h1>
-          <p>These videos were made with Astrofox. What will you create?</p>
-          <div className="thumbnails">
-            {videos.map(({ img, url, alt }) => (
-              <div className="thumbnail">
-                <img
-                  key={url}
-                  src={`/images/videos/${img}`}
-                  onClick={() => this.showVideo(url)}
-                  alt={alt}
-                />
-              </div>
-            ))}
-          </div>
-          {videoUrl && (
-            <div className="video">
-              <div className="video__wrapper">
-                <iframe
-                  width="720"
-                  height="720"
-                  src={`https://www.youtube.com/embed/${videoUrl}`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
+  return (
+    <section id="videos" className="center row justify-content-center">
+      <div className="col">
+        <h1>Unleash your creativity</h1>
+        <p>These videos were made with Astrofox. What will you create?</p>
+        <div className="thumbnails">
+          {videos.map(({ img, url, alt }) => (
+            <div key={url} className="thumbnail">
+              <img
+                key={url}
+                src={`/images/videos/${img}`}
+                onClick={() => setVideo(url)}
+                alt={alt}
+              />
             </div>
-          )}
+          ))}
         </div>
-      </section>
-    );
-  }
+        {video && <Video video={video} width={720} height={720} aspect="square" />}
+      </div>
+    </section>
+  );
 }
-
-export default Videos;

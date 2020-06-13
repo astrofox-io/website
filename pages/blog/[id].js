@@ -1,30 +1,23 @@
 import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import Layout from '../../components/layout';
-import Date from '../../components/date';
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import Layout from 'components/layout';
+import Date from 'components/date';
+import { getAllPostIds, getPostData } from 'lib/posts';
 
-export default function FirstPost({ postData }) {
+export default function BlogPost({ postData }) {
   return (
     <Layout>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
-      <div>
-        {postData.title}
-        <br />
-        {postData.id}
-        <br />
-        <Date dateString={postData.date} />
-        <br />
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </div>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2>
+      <article className="blog-post row justify-content-center">
+        <div className="col-lg-8">
+          <h1>{postData.title}</h1>
+          <div className="blog-header">
+            {postData.author} / <Date dateString={postData.date} />
+          </div>
+          <div
+            className="blog-content"
+            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+          />
+        </div>
+      </article>
     </Layout>
   );
 }
