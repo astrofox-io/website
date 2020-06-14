@@ -127,6 +127,7 @@ svg {
 
 .screenshot {
   position: relative;
+  cursor: pointer;
 }
 
 .screenshot img {
@@ -142,7 +143,6 @@ svg {
   margin: auto;
   width: 150px;
   height: 150px;
-  cursor: pointer;
 }
 
 .block {
@@ -286,6 +286,6 @@ svg {
 
 .button:hover {
   color: #fafafa;
-  background: #7b66ec;
+  background: #7c5dd7;
   text-decoration: none;
 }

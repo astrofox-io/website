@@ -10,7 +10,7 @@ export default function Support() {
     <Layout title="Support">
       <section className="container">
         <div className="row center justify-content-center">
-          <div className="col-lg-6">
+          <div className="col-lg-8">
             <h1>Support</h1>
             <p>
               Come join our community to get help with issues, discuss ideas and share your

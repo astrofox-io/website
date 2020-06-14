@@ -30,7 +30,7 @@ export default function Features() {
 }
 
 const Feature = ({ title, icon, children }) => (
-  <Block className="feature col-lg-5 col-md-10 col-sm-12" icon={icon} title={title}>
+  <Block className="feature" icon={icon} title={title}>
     {children}
   </Block>
 );

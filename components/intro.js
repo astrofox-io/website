@@ -13,15 +13,15 @@ export default function Intro() {
         <p>
           Astrofox is a powerful motion graphics tool that lets you create amazing audio reactive
           music videos. Combine your music with text, images, effects, and animations to create
-          stunning, unique visuals. Export high-definition videos to share on video and social media
-          sites to gain new fans.
+          stunning, unique visuals. Generate high-definition videos to share on video and social
+          media sites to gain new fans.
         </p>
         <Link href="/download">
           <a className="button">Download Astrofox</a>
         </Link>
-        <div className="screenshot pt-5">
+        <div className="screenshot pt-5" onClick={() => setShowVideo(true)}>
           <img src="/images/screenshot.jpg" />
-          <PlayButton onClick={() => setShowVideo(true)} />
+          <PlayButton />
         </div>
       </div>
       {showVideo && (
