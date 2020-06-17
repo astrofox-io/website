@@ -6,7 +6,7 @@ import Block from 'components/block';
 import Apple from 'assets/apple.svg';
 import Windows from 'assets/windows.svg';
 
-const URL = 'https://files.astrofox.io/download';
+const URL = 'https://files.astrofox.io/file/astrofox/download';
 
 export default function Download({ win, mac }) {
   return (

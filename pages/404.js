@@ -8,7 +8,7 @@ export default function Custom404() {
         <div className="col center">
           <h1 className="center">404</h1>
           <img src="/images/logo.png" width={200} />
-          <h2>PAGE NOT FOUND</h2>
+          <h2>NOT FOUND</h2>
         </div>
       </div>
     </Layout>
