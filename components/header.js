@@ -22,13 +22,13 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/blog">
-                <a>Blog</a>
+              <Link href="/support">
+                <a>Support</a>
               </Link>
             </li>
             <li>
-              <Link href="/support">
-                <a>Support</a>
+              <Link href="/blog">
+                <a>Blog</a>
               </Link>
             </li>
           </ul>

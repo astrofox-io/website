@@ -10,19 +10,20 @@ export default function Intro() {
     <section id="intro" className="center row justify-content-center">
       <div className="col col-lg-8 col-md-10">
         <h1>Make awesome music videos</h1>
+        <Link href="/download">
+          <a className="button">Download Astrofox</a>
+        </Link>
+        <div className="screenshot pt-5 pb-5" onClick={() => setShowVideo(true)}>
+          <img src="/images/screenshot.jpg" />
+          <PlayButton />
+        </div>
+        <h2>Turn music into visual magic</h2>
         <p>
           Astrofox is a powerful motion graphics tool that lets you create amazing audio reactive
           music videos. Combine your music with text, images, effects, and animations to create
           stunning, unique visuals. Generate high-definition videos to share on video and social
           media sites to gain new fans.
         </p>
-        <Link href="/download">
-          <a className="button">Download Astrofox</a>
-        </Link>
-        <div className="screenshot pt-5" onClick={() => setShowVideo(true)}>
-          <img src="/images/screenshot.jpg" />
-          <PlayButton />
-        </div>
       </div>
       {showVideo && (
         <div className="video-overlay" onClick={() => setShowVideo(false)}>

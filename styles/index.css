@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-  color: #bdbdbd;
+  color: #7c5dd7;
 }
 
 h1,
@@ -63,6 +63,10 @@ p {
 
 svg {
   fill: #fafafa;
+}
+
+ol li {
+  font-weight: 600;
 }
 
 #__next {

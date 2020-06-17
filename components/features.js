@@ -18,8 +18,7 @@ export default function Features() {
       </Feature>
       <Feature title="Precise control" icon={<Sliders className="feature-icon" />}>
         Astrofox features a streamlined interface that let's you easily control your visual
-        elements. Use the built-in audio player to quickly seek through your music and find the
-        perfect moment.
+        elements. Quickly experiment with new ideas and watch them happen live.
       </Feature>
       <Feature title="Infinite possibilities" icon={<Infinity className="feature-icon" />}>
         Astrofox lets you compose individual scenes with their own set of displays and effects.

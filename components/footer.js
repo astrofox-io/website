@@ -6,7 +6,10 @@ export default function Footer() {
     <footer id="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">Copyright &copy; Mike Cao</div>
+          <div className="col-lg-6">
+            <b>ASTROFOX</b>
+            <div>&copy; {new Date().getFullYear()} Mike Cao</div>
+          </div>
           <div className="col-lg-6">
             <Social />
           </div>

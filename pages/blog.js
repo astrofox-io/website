@@ -11,13 +11,17 @@ export default function Blog({ allPostsData }) {
       <div className="center mb-5">The latest updates on Astrofox</div>
 
       {allPostsData.map(({ id, date, title, excerpt }) => (
-        <article key={id} className="mb-5">
-          <Date dateString={date} />
-          <h3>
+        <article key={id} className="row mb-5">
+          <div className="col-2">
+            <Date dateString={date} />
+          </div>
+          <div className="col-8">
             <Link href={`/blog/${id}`}>
-              <a>{title}</a>
+              <a>
+                <b>{title}</b>
+              </a>
             </Link>
-          </h3>
+          </div>
         </article>
       ))}
     </Layout>
