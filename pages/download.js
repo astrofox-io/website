@@ -18,13 +18,13 @@ export default function Download({ win, mac }) {
           <div className="row pt-5 justify-content-between">
             <Block icon={<Apple />}>
               <div className="mt-5 mb-5">macOS 10.10+ 64-bit</div>
-              <a href={`${URL}/${mac.path}`} className="button">
+              <a href={`${URL}/${mac.path}`} className="button ga" id="download-button-mac">
                 {`Download v${mac.version}`}
               </a>
             </Block>
             <Block icon={<Windows />}>
               <div className="mt-5 mb-5">Windows 7+ 64-bit</div>
-              <a href={`${URL}/${win.path}`} className="button">
+              <a href={`${URL}/${win.path}`} className="button ga" id="download-button-win">
                 {`Download v${win.version}`}
               </a>
             </Block>

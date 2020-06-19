@@ -29,7 +29,9 @@ export default function Support() {
             <h1 className="center">FAQ</h1>
             <ol>
               <li>How much does Astrofox cost?</li>
-              <p>Astrofox is completely free to use.</p>
+              <p>
+                Astrofox is completely <b>FREE</b> to use.
+              </p>
               <li>What do I need to run Astrofox?</li>
               <p>
                 Astrofox runs on Windows 7+ and MacOS 10.10+. You will need a video card capable of

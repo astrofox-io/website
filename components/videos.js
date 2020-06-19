@@ -23,13 +23,13 @@ export default function Videos() {
         <p>These videos were made with Astrofox. What will you create?</p>
         <div className="thumbnails">
           {videos.map(({ img, url, alt }) => (
-            <div key={url} className="thumbnail">
-              <img
-                key={url}
-                src={`/images/videos/${img}`}
-                onClick={() => setVideo(url)}
-                alt={alt}
-              />
+            <div
+              key={url}
+              id={`video-thumbnail-${url}`}
+              className="thumbnail ga"
+              onClick={() => setVideo(url)}
+            >
+              <img key={url} src={`/images/videos/${img}`} alt={alt} />
             </div>
           ))}
         </div>
