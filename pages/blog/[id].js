@@ -10,7 +10,7 @@ export default function BlogPost({ postData }) {
         <div className="col-lg-8">
           <h1>{postData.title}</h1>
           <div className="blog-header">
-            {postData.author} / <Date dateString={postData.date} />
+            Posted <Date dateString={postData.date} /> by {postData.author}
           </div>
           <div
             className="blog-content"

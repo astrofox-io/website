@@ -210,6 +210,7 @@ ol li {
   font-size: 32px;
   color: #bdbdbd;
   cursor: pointer;
+  z-index: 1;
 }
 
 .video-close:hover {
@@ -243,6 +244,11 @@ ol li {
 
 .blog-content {
   margin-top: 48px;
+}
+
+.blog-link {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .social-links {

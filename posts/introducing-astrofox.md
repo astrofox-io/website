@@ -10,8 +10,8 @@ What began as a side project to learn some new web technologies has now become a
 ### What is it?
 
 Astrofox is a motion graphics tool for creating audio-reactive visuals synced to music. You can combine images and text
-with audio elements like sound waves and spectrum bars that react to music. You can get even more advanced and
-add effects like blur and glow to enhance your visuals.
+with audio elements like sound waves and spectrum bars that react to music. You go further by
+adding one of many effects like blur and glow to enhance your visuals.
 Then save your work as high-definition videos and share them on social media sites to gain new fans.
 
 ### Why?
