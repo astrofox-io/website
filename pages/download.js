@@ -18,7 +18,11 @@ export default function Download({ win, mac }) {
           <div className="row pt-5 justify-content-between">
             <Block icon={<Apple />}>
               <div className="mt-5 mb-5">macOS 10.10+ 64-bit</div>
-              <a href={`${URL}/${mac.path}`} className="button ga" id="download-button-mac">
+              <a
+                href={`${URL}/Astrofox-${mac.version}.dmg`}
+                className="button ga"
+                id="download-button-mac"
+              >
                 {`Download v${mac.version}`}
               </a>
             </Block>
