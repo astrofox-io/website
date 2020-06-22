@@ -3,6 +3,8 @@ import Link from 'next/link';
 import PlayButton from '../assets/play-circle.svg';
 import Video from './video';
 
+const VIDEO_ID = 'f6ujpgm1zSM';
+
 export default function Intro() {
   const [showVideo, setShowVideo] = useState(false);
 
@@ -35,7 +37,7 @@ export default function Intro() {
           <div className="video-close" onClick={() => setShowVideo(false)}>
             ✕
           </div>
-          <Video video="9bZkp7q19f0" width={1920} height={1080} aspect="wide" />
+          <Video video={VIDEO_ID} width={1920} height={1080} aspect="wide" />
         </div>
       )}
     </section>
