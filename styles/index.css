@@ -92,6 +92,10 @@ ol li {
   padding: 48px;
 }
 
+#videos .video {
+  max-width: 720px;
+}
+
 .header__title {
   display: flex;
   align-items: center;
@@ -189,6 +193,10 @@ ol li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.video-overlay .video {
+  max-width: calc(100vh * 1.5625);
 }
 
 .video-overlay:before {

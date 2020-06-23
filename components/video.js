@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Video({ video, width, height }) {
   return (
-    <div id={`video-${video}`} className="video ga" style={{ maxWidth: width }}>
+    <div id={`video-${video}`} className="video ga">
       <div className="video__wrapper" style={{ paddingBottom: `${(height / width) * 100}%` }}>
         <iframe
           width={width}
