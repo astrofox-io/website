@@ -10,7 +10,7 @@ export default function Blog({ allPostsData }) {
       <h1 className="center">Astroblog</h1>
       <div className="center mb-5">The latest updates on Astrofox</div>
 
-      {allPostsData.map(({ id, date, title, excerpt }) => (
+      {allPostsData.map(({ id, date, title }) => (
         <article key={id} className="row mb-5 align-items-center">
           <div className="col-2">
             <Date dateString={date} />
@@ -27,7 +27,7 @@ export default function Blog({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = await getSortedPostsData();
   return {
     props: {
       allPostsData,

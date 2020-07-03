@@ -3,7 +3,7 @@ import Link from 'next/link';
 import PlayButton from '../assets/play-circle.svg';
 import Video from './video';
 
-const VIDEO_ID = 'f6ujpgm1zSM';
+const VIDEO_ID = 'IbvuniqNPPw';
 
 export default function Intro() {
   const [showVideo, setShowVideo] = useState(false);
