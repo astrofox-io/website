@@ -6,6 +6,7 @@ import Block from 'components/block';
 import Apple from 'assets/apple.svg';
 import Windows from 'assets/windows.svg';
 import Linux from 'assets/linux.svg';
+import ArrowDown from 'assets/arrow-to-bottom.svg';
 
 const URL = 'https://files.astrofox.io/download';
 
@@ -30,8 +31,8 @@ export default function Download({ win, mac, linux }) {
 const Item = ({ title, icon, type, version, path }) => (
   <Block icon={icon}>
     <div className="mt-5 mb-5">{title}</div>
-    <a href={`${URL}/${path}`} className="button ga" id={`download-button-${type}`}>
-      {`Download v${version}`}
+    <a href={`${URL}/${path}`} className="button ga mb-sm-5" id={`download-button-${type}`}>
+      <ArrowDown className="button-icon" /> {`Download v${version}`}
     </a>
   </Block>
 );

@@ -292,7 +292,8 @@ ol li {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   font-size: 24px;
   padding: 8px 16px;
   color: #fafafa;
@@ -306,4 +307,10 @@ ol li {
   color: #fafafa;
   background: #7c5dd7;
   text-decoration: none;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
 }
