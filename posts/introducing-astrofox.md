@@ -19,8 +19,8 @@ Then save your work as high-definition videos and share them on social media sit
 Today, sharing content via video is common everywhere. As an musician, you want as many people as possible
 to hear your music. Astrofox lets you create eye-catching videos that will automatically play on sites like Facebook,
 Instagram and Twitter. As an artist or marketer, you can quickly generate motion graphics without
-the need for a designer or developer. Or maybe you are just a hobbyist who wants to experiment with a few ideas
-and see where your creativity takes you.
+the need for a designer or developer. As a podcaster, you can easily put together a moving video to share.
+Or maybe you are just a hobbyist who wants to experiment with a few ideas and see where your creativity takes you.
 
 The goal of Astrofox is to provide a tool that lets you quickly and easily create videos of amazing music visualizations.
 I hope you find Astrofox useful and enjoy using it.

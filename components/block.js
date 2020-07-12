@@ -1,10 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
 import classNames from 'classnames';
 
 export default function Block({ className, icon, title, href, children }) {
   return (
-    <div className={classNames('block center col-lg-5 col-md-10 col-sm-12 mb-5', className)}>
+    <div className={classNames('block center col-lg-4 col-sm-12 mb-5', className)}>
       {icon && <div className="icon">{icon}</div>}
       {title && (
         <h2>

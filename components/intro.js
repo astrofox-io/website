@@ -27,9 +27,10 @@ export default function Intro() {
         </div>
         <h2>Turn music into visual magic</h2>
         <p>
-          Astrofox is a powerful motion graphics tool that lets you create amazing audio reactive
-          music videos. Combine music with text, images, animations and effects to create stunning,
-          unique visuals. Generate high-definition videos to share your work with the world.
+          Astrofox is a powerful motion graphics tool that lets you turn amazing music
+          visualizations into videos. Combine music with text, images, animations and effects to
+          create stunning, unique visuals. Generate high-definition videos to share your work with
+          the world.
         </p>
       </div>
       {showVideo && (
