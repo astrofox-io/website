@@ -17,8 +17,8 @@ export default function Download({ win, mac, linux }) {
           <h1>Download Astrofox</h1>
           <h3>Choose your OS</h3>
           <div className="row pt-5 justify-content-between">
-            <Item title="macOS 10.10+ 64-bit" icon={<Apple />} type="mac" {...mac} />
-            <Item title="Windows 7+ 64-bit" icon={<Windows />} type="win" {...win} />
+            <Item title="macOS 64-bit" icon={<Apple />} type="mac" {...mac} />
+            <Item title="Windows 64-bit" icon={<Windows />} type="win" {...win} />
             <Item title="Linux 64-bit" icon={<Linux />} type="linux" {...linux} />
           </div>
         </div>
