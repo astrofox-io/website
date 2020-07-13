@@ -29,11 +29,11 @@ export default function Download({ win, mac, linux }) {
 }
 
 const Item = ({ title, icon, type, version, path }) => (
-  <Block icon={icon}>
+  <Block icon={icon} className="col-sm-12">
     <div className="mt-5 mb-5">{title}</div>
     <a
       href={`${URL}/${path.replace('-mac.zip', '.dmg')}`}
-      className="button ga mb-sm-5"
+      className="button ga mb-5"
       id={`download-button-${type}`}
     >
       <ArrowDown className="button-icon" /> {`Download v${version}`}
