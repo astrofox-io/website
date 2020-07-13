@@ -6,7 +6,7 @@ export default function Header() {
     <header id="header" className="container">
       <div className="row">
         <div className="col-lg-6 col-sm-12">
-          <div className="header-title justify-content-center">
+          <div className="header-title justify-content-center justify-content-lg-start">
             <Link href="/">
               <a>
                 <img src="/images/title.png" height={50} />
@@ -15,7 +15,7 @@ export default function Header() {
           </div>
         </div>
         <nav className="col-lg-6 col-sm-12">
-          <ul className="header-links justify-content-center">
+          <ul className="header-links justify-content-center justify-content-lg-end">
             <li>
               <Link href="/download">
                 <a>Download</a>
