@@ -34,8 +34,8 @@ export default function Support() {
               </p>
               <li>What do I need to run Astrofox?</li>
               <p>
-                Astrofox runs on Windows 7+, MacOS 10.10+ and Linux (Ubuntu 12.04+, Fedora 21,
-                Debian 8). You will need a video card capable of running
+                Astrofox runs on Windows 7+, MacOS 10.10+ (Yosemite or newer) and Linux (Ubuntu
+                12.04+, Fedora 21, Debian 8). You will need a video card capable of running
                 <a href="https://get.webgl.org/" target="_blank">
                   {` WebGL`}
                 </a>
