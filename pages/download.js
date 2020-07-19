@@ -33,7 +33,7 @@ const Item = ({ title, icon, type, version, path }) => (
     <div className="mt-5 mb-5">{title}</div>
     <a
       href={`${URL}/${path.replace('-mac.zip', '.dmg')}`}
-      className="button ga mb-5"
+      className={`button mb-5 umami--click--download-button-${type}`}
       id={`download-button-${type}`}
     >
       <ArrowDown className="button-icon" /> {`Download v${version}`}

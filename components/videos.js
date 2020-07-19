@@ -26,7 +26,7 @@ export default function Videos() {
             <div
               key={url}
               id={`video-thumbnail-${url}`}
-              className="thumbnail ga"
+              className={`thumbnail umami--click--video-thumbnail-${url}`}
               onClick={() => setVideo(url)}
             >
               <img key={url} src={`/images/videos/${img}`} alt={alt} />

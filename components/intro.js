@@ -13,13 +13,13 @@ export default function Intro() {
       <div className="col col-lg-8 col-md-10">
         <h1>Make awesome music videos</h1>
         <Link href="/download">
-          <a id="download-button-intro" className="button ga">
+          <a id="download-button-intro" className="button umami--click--download-button-intro">
             Download Astrofox
           </a>
         </Link>
         <div
           id="video-screenshot"
-          className="screenshot pt-5 pb-5 ga"
+          className="screenshot pt-5 pb-5 umami--click--video-screenshot"
           onClick={() => setShowVideo(true)}
         >
           <img src="/images/screenshot.jpg" />
