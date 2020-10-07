@@ -33,7 +33,11 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <a href="https://github.com/astrofox-io/astrofox" target="_blank">
+              <a
+                href="https://github.com/astrofox-io/astrofox"
+                className="umami--click--github-button"
+                target="_blank"
+              >
                 <Github />
               </a>
             </li>

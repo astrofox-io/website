@@ -18,9 +18,24 @@ export default function Support() {
               feedback.
             </p>
             <div className="row pt-5 justify-content-between">
-              <Block title="Discord chat" icon={<Discord />} href={config.discordUrl} />
-              <Block title="Reddit forum" icon={<Reddit />} href={config.redditUrl} />
-              <Block title="Github issues" icon={<Github />} href={config.githubIssuesUrl} />
+              <Block
+                title="Discord chat"
+                icon={<Discord />}
+                href={config.discordUrl}
+                linkClassName="umami--click--discord-link"
+              />
+              <Block
+                title="Reddit forum"
+                icon={<Reddit />}
+                href={config.redditUrl}
+                linkClassName="umami--click--reddit-link"
+              />
+              <Block
+                title="Github issues"
+                icon={<Github />}
+                href={config.githubIssuesUrl}
+                linkClassName="umami--click--github-issues-link"
+              />
             </div>
           </div>
         </div>

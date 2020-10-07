@@ -11,22 +11,22 @@ import config from 'config/site.json';
 export default function Social() {
   return (
     <div className="social-links pt-5 pt-lg-0 justify-content-center justify-content-lg-end">
-      <a href={config.discordUrl} target="_blank">
+      <a href={config.discordUrl} className="umami--click--discord-button" target="_blank">
         <Discord />
       </a>
-      <a href={config.redditUrl} target="_blank">
+      <a href={config.redditUrl} className="umami--click--reddit-button" target="_blank">
         <Reddit />
       </a>
-      <a href={config.twitterUrl} target="_blank">
+      <a href={config.twitterUrl} className="umami--click--twitter-button" target="_blank">
         <Twitter />
       </a>
-      <a href={config.instagramUrl} target="_blank">
+      <a href={config.instagramUrl} className="umami--click--instagram-button" target="_blank">
         <Instagram />
       </a>
-      <a href={config.facebookUrl} target="_blank">
+      <a href={config.facebookUrl} className="umami--click--facebook-button" target="_blank">
         <Facebook />
       </a>
-      <a href={`mailto:${config.email}`} target="_blank">
+      <a href={`mailto:${config.email}`} className="umami--click--email-button" target="_blank">
         <Email />
       </a>
     </div>
