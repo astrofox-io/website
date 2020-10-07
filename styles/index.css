@@ -140,6 +140,11 @@ ol li {
   color: #fafafa;
 }
 
+.header-links svg {
+  width: 24px;
+  height: 24px;
+}
+
 .screenshot {
   position: relative;
   cursor: pointer;

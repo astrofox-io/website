@@ -3,6 +3,7 @@ import Layout from 'components/layout';
 import Block from 'components/block';
 import Discord from 'assets/discord.svg';
 import Reddit from 'assets/reddit.svg';
+import Github from 'assets/github.svg';
 import config from 'config/site.json';
 
 export default function Support() {
@@ -10,7 +11,7 @@ export default function Support() {
     <Layout title="Support">
       <section id="support" className="container">
         <div className="row center justify-content-center">
-          <div className="col-lg-8">
+          <div className="col-lg-10">
             <h1>Support</h1>
             <p>
               Come join our community to get help with issues, discuss ideas and share your
@@ -19,6 +20,7 @@ export default function Support() {
             <div className="row pt-5 justify-content-between">
               <Block title="Discord chat" icon={<Discord />} href={config.discordUrl} />
               <Block title="Reddit forum" icon={<Reddit />} href={config.redditUrl} />
+              <Block title="Github issues" icon={<Github />} href={config.githubIssuesUrl} />
             </div>
           </div>
         </div>
@@ -30,7 +32,7 @@ export default function Support() {
             <ol>
               <li>How much does Astrofox cost?</li>
               <p>
-                Astrofox is completely <b>FREE</b> to use.
+                Astrofox is completely <b>FREE</b> and open-source.
               </p>
               <li>What do I need to run Astrofox?</li>
               <p>

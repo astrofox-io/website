@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Github from 'assets/github.svg';
 
 export default function Header() {
   return (
@@ -30,6 +31,11 @@ export default function Header() {
               <Link href="/blog">
                 <a>Blog</a>
               </Link>
+            </li>
+            <li>
+              <a href="https://github.com/astrofox-io/astrofox" target="_blank">
+                <Github />
+              </a>
             </li>
           </ul>
         </nav>
