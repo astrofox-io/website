@@ -11,7 +11,9 @@ export default function Intro() {
   return (
     <section id="intro" className="center row justify-content-center">
       <div className="col col-lg-8 col-md-10">
-        <h1>Make awesome music videos</h1>
+        <h1>
+          Turn <em>audio</em> into amazing <em>videos</em>
+        </h1>
         <Link href="/download">
           <a id="download-button-intro" className="button umami--click--download-button-intro">
             Download Astrofox
@@ -25,12 +27,11 @@ export default function Intro() {
           <img src="/images/screenshot.jpg" />
           <PlayButton id="video-play-button" />
         </div>
-        <h2>Turn music into visual magic</h2>
-        <p>
-          Astrofox is a powerful motion graphics tool that lets you turn amazing music
-          visualizations into videos. Combine music with text, images, animations and effects to
-          create stunning, unique visuals. Generate high-definition videos to share your work with
-          the world.
+        <p className="font-large">
+          Astrofox is a free, open-source motion graphics program that lets you turn your audio into
+          custom, shareable videos. Combine text, images, animations and effects to create stunning,
+          unique visuals. Then generate high-definition videos to share with your fans on social
+          media.
         </p>
       </div>
       {showVideo && (

@@ -60,6 +60,11 @@ p {
   margin-bottom: 48px;
 }
 
+em {
+  color: #7c5dd7;
+  font-style: normal;
+}
+
 svg {
   fill: #fafafa;
 }
@@ -89,6 +94,11 @@ ol li {
 #footer .row {
   font-size: 14px;
   padding: 48px;
+}
+
+#footer a,
+#footer a:hover {
+  color: #fafafa;
 }
 
 #videos .video {
@@ -324,4 +334,8 @@ ol li {
   width: 24px;
   height: 24px;
   margin-right: 12px;
+}
+
+.font-large {
+  font-size: 20px;
 }
