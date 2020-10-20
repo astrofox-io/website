@@ -7,7 +7,10 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
-            <b>ASTROFOX</b> &copy; <a href="https://mikecao.com">Mike Cao</a>
+            <b>ASTROFOX</b>
+            <div>
+              &copy; <a href="https://mikecao.com">Mike Cao</a>
+            </div>
           </div>
           <div className="col-12 col-lg-6">
             <Social />

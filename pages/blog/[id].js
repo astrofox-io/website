@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from 'components/layout';
 import Date from 'components/date';
-import { getAllPostIds, getPostData } from 'lib/posts';
+import { getAllPathIds, getHtmlContent, POSTS_DIR } from 'lib/content';
 
 export default function BlogPost({ postData }) {
   return (
@@ -23,7 +23,7 @@ export default function BlogPost({ postData }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllPathIds(POSTS_DIR);
   return {
     paths,
     fallback: false,
@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const postData = await getHtmlContent(POSTS_DIR, params.id);
   return {
     props: {
       postData,

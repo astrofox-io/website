@@ -2,9 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import Layout from 'components/layout';
 import Date from 'components/date';
-import { getSortedPostsData } from 'lib/posts';
+import { getSortedPosts, POSTS_DIR } from 'lib/content';
 
-export default function Blog({ allPostsData }) {
+export default function Index({ allPostsData }) {
   return (
     <Layout title="Blog">
       <h1 className="center">Astroblog</h1>
@@ -27,7 +27,7 @@ export default function Blog({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = await getSortedPostsData();
+  const allPostsData = await getSortedPosts(POSTS_DIR);
   return {
     props: {
       allPostsData,

@@ -40,33 +40,6 @@ export default function Support() {
           </div>
         </div>
       </section>
-      <section id="faq" className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-8">
-            <h1 className="center">FAQ</h1>
-            <ol>
-              <li>How much does Astrofox cost?</li>
-              <p>
-                Astrofox is completely <b>FREE</b> and open-source.
-              </p>
-              <li>What do I need to run Astrofox?</li>
-              <p>
-                Astrofox runs on Windows 7+, MacOS 10.10+ (Yosemite or newer) and Linux (Ubuntu
-                12.04+, Fedora 21, Debian 8). You will need a video card capable of running
-                <a href="https://get.webgl.org/" target="_blank">
-                  {` WebGL`}
-                </a>
-                .
-              </p>
-              <li>How do I save videos of my work?</li>
-              <p>
-                Astrofox has a built-in video renderer. After you have loaded your audio file and
-                selected your visuals, simply click <i>Save Video</i> from the file menu.
-              </p>
-            </ol>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 }

@@ -13,7 +13,7 @@ export default function Layout({ title, children }) {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
           rel="stylesheet"
         />
-        {typeof window !== 'undefined' && (
+        {typeof window !== 'undefined' && process.env.NODE_ENV === 'production' && (
           <script
             async
             defer
