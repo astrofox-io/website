@@ -51,6 +51,7 @@ const Item = ({ title, icon, type, version, path }) => {
         href={href}
         className={`button mb-5 umami--click--download-button-${type}`}
         id={`download-button-${type}`}
+        target="_blank"
       >
         <ArrowDown className="button-icon" />
         <span>Download {tag}</span>
