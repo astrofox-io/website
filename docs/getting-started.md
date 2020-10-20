@@ -1,6 +1,6 @@
 ## Getting started
 
-Welcome to the Astrofox documentation! Here you will find helpful instruction on how to use Astrofox.
+Welcome to the Astrofox documentation! Here you will find helpful instructions on how to use Astrofox.
 
 Choose a topic from the menu on the left to get started.
 
