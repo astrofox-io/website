@@ -10,7 +10,7 @@ import Github from 'assets/github.svg';
 import ArrowDown from 'assets/arrow-to-bottom.svg';
 import { downloadUrl, githubUrl } from 'config/site.json';
 
-export default function Download({ win, mac, linux, git }) {
+export default function Download({ win, mac, linux }) {
   return (
     <Layout title="Download">
       <section className="row justify-content-center">
