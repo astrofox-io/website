@@ -20,11 +20,13 @@ export default function Layout({ title, children }) {
               defer
               data-website-id="7f5a82ce-79e7-452d-b30b-5b65790ac62a"
               src="https://app.umami.is/script.js"
-            />
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VCRCJV27V" />
+            ></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VCRCJV27V"></script>
             <script>
-              window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
-              gtag('js', new Date()); gtag('config', 'G-5VCRCJV27V');
+              {`window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-5VCRCJV27V');`}
             </script>
           </>
         )}
