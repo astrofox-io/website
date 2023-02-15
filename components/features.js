@@ -17,8 +17,8 @@ export default function Features() {
         rendered in real-time. You can even add and manipulate effects as the music is playing.
       </Feature>
       <Feature title="Precise control" icon={<Sliders className="feature-icon" />}>
-        Astrofox features a streamlined interface that let's you easily control your visual
-        elements. Quickly experiment with new ideas and watch them happen live.
+        Astrofox features a streamlined interface that lets you easily control your visual elements.
+        Quickly experiment with new ideas and watch them happen live.
       </Feature>
       <Feature title="Infinite possibilities" icon={<Infinity className="feature-icon" />}>
         Astrofox lets you compose individual scenes with their own set of displays and effects.
