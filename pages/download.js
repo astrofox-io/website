@@ -8,9 +8,11 @@ import Windows from 'assets/windows.svg';
 import Linux from 'assets/linux.svg';
 import Github from 'assets/github.svg';
 import ArrowDown from 'assets/arrow-to-bottom.svg';
-import { downloadUrl, githubUrl } from 'config/site.json';
+import site from 'config/site.json';
 
-export default function Download({ win, mac, linux, git }) {
+const { downloadUrl, githubUrl } = site;
+
+export default function Download({ win, mac, linux }) {
   return (
     <Layout title="Download">
       <section className="row justify-content-center">
