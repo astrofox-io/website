@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Video({ video, width, height }) {
   return (
-    <div id={`video-${video}`} className={`video umami--click--video-play-${video}`}>
+    <div id={`video-${video}`} className="video" data-umami-event={`video-play-${video}`}>
       <div className="video-wrapper" style={{ paddingBottom: `${(height / width) * 100}%` }}>
         <iframe
           width={width}

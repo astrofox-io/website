@@ -9,33 +9,18 @@ import config from 'config/site.json';
 export default function Social() {
   return (
     <div className="social-links pt-5 pt-lg-0 justify-content-center justify-content-lg-end">
-      <a
-        href={config.discordUrl}
-        className="umami--click--discord-button"
-        rel="noopener"
-        target="_blank"
-      >
+      <a href={config.discordUrl} data-umami-event="discord-button" rel="noopener" target="_blank">
         <Discord />
       </a>
-      <a
-        href={config.redditUrl}
-        className="umami--click--reddit-button"
-        rel="noopener"
-        target="_blank"
-      >
+      <a href={config.redditUrl} data-umami-event="reddit-button" rel="noopener" target="_blank">
         <Reddit />
       </a>
-      <a
-        href={config.twitterUrl}
-        className="umami--click--twitter-button"
-        rel="noopener"
-        target="_blank"
-      >
+      <a href={config.twitterUrl} data-umami-event="twitter-button" rel="noopener" target="_blank">
         <Twitter />
       </a>
       <a
         href={config.instagramUrl}
-        className="umami--click--instagram-button"
+        data-umami-event="instagram-button"
         rel="noopener"
         target="_blank"
       >
@@ -43,7 +28,7 @@ export default function Social() {
       </a>
       <a
         href={config.facebookUrl}
-        className="umami--click--facebook-button"
+        data-umami-event="facebook-button"
         rel="noopener"
         target="_blank"
       >

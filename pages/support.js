@@ -22,19 +22,19 @@ export default function Support() {
                 title="Discord chat"
                 icon={<Discord />}
                 href={config.discordUrl}
-                linkClassName="umami--click--discord-link"
+                data-umami-event="discord-link"
               />
               <Block
                 title="Reddit forum"
                 icon={<Reddit />}
                 href={config.redditUrl}
-                linkClassName="umami--click--reddit-link"
+                data-umami-event="reddit-link"
               />
               <Block
                 title="Github issues"
                 icon={<Github />}
                 href={config.githubIssuesUrl}
-                linkClassName="umami--click--github-issues-link"
+                data-umami-event="github-issues-link"
               />
             </div>
           </div>

@@ -51,7 +51,8 @@ const Item = ({ title, icon, type, version, path }) => {
       <div className="mt-5 mb-5">{title}</div>
       <a
         href={href}
-        className={`button mb-5 umami--click--download-button-${type}`}
+        className="button mb-5"
+        data-umami-event={`download-button-${type}`}
         id={`download-button-${type}`}
         target="_blank"
       >

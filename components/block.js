@@ -1,9 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 
-export default function Block({ className, icon, title, href, linkClassName, children }) {
+export default function Block({ className, icon, title, href, linkClassName, children, ...props }) {
   return (
-    <div className={classNames('block center col-12 col-sm-10 col-lg-4 mb-5', className)}>
+    <div
+      {...props}
+      className={classNames('block center col-12 col-sm-10 col-lg-4 mb-5', className)}
+    >
       {icon && <div className="icon">{icon}</div>}
       {title && (
         <h2>
