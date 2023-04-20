@@ -3,15 +3,12 @@ import classNames from 'classnames';
 
 export default function Block({ className, icon, title, href, linkClassName, children, ...props }) {
   return (
-    <div
-      {...props}
-      className={classNames('block center col-12 col-sm-10 col-lg-4 mb-5', className)}
-    >
+    <div className={classNames('block center col-12 col-sm-10 col-lg-4 mb-5', className)}>
       {icon && <div className="icon">{icon}</div>}
       {title && (
         <h2>
           {href ? (
-            <a href={href} className={linkClassName} target="_blank">
+            <a {...props} href={href} className={linkClassName} target="_blank">
               {title}
             </a>
           ) : (

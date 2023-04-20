@@ -15,7 +15,7 @@ export default function Intro() {
           Turn <em>audio</em> into amazing <em>videos</em>
         </h1>
         <Link href="/download">
-          <a id="download-button-intro" data-umami-event="download-button-intro">
+          <a id="download-button-intro" className="button" data-umami-event="download-button-intro">
             Download Astrofox
           </a>
         </Link>
