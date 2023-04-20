@@ -11,4 +11,12 @@ module.exports = {
 
     return config;
   },
+  async rewrites() {
+    return [
+      {
+        source: '/script.js',
+        destination: 'https://app.umami.is/script.js',
+      },
+    ];
+  },
 };

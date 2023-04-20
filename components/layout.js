@@ -19,7 +19,7 @@ export default function Layout({ title, children }) {
               async
               defer
               data-website-id="7f5a82ce-79e7-452d-b30b-5b65790ac62a"
-              src="https://app.umami.is/script.js"
+              src="https://astrofox.io/script.js"
             />
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VCRCJV27V"></script>
             <script>
