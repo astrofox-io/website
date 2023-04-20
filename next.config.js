@@ -14,8 +14,8 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/script.js',
-        destination: 'https://app.umami.is/script.js',
+        source: '/stats/:path*',
+        destination: 'https://app.umami.is/:path*',
       },
     ];
   },
