@@ -15,7 +15,7 @@ module.exports = {
     return [
       {
         source: '/stats/:path*',
-        destination: 'https://app.umami.is/:path*',
+        destination: 'http://umami.mikecao.com/:path*',
       },
     ];
   },
