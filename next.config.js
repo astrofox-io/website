@@ -15,7 +15,7 @@ module.exports = {
     return [
       {
         source: '/stats/:path*',
-        destination: 'http://umami.mikecao.com/:path*',
+        destination: 'http://stats.mikecao.com/:path*',
       },
     ];
   },
