@@ -18,7 +18,7 @@ export default function Layout({ title, children }) {
             <script
               async
               defer
-              data-website-id="7f5a82ce-79e7-452d-b30b-5b65790ac62a"
+              data-website-id="d66254c1-5e64-4539-a5df-72511d8cdd4e"
               src="https://astrofox.io/stats/script.js"
             />
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VCRCJV27V"></script>
