@@ -19,6 +19,7 @@
 .DS_Store
 .idea
 *.iml
+.astro
 
 # debug
 npm-debug.log*
