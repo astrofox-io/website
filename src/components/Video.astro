@@ -1,0 +1,26 @@
+---
+interface Props {
+  video: string;
+  width: number;
+  height: number;
+  id?: string;
+  class?: string;
+}
+
+const { video, width, height, id, class: className = '' } = Astro.props;
+const aspectPadding = `${(height / width) * 100}%`;
+---
+
+<div id={id} class:list={['mx-auto flex-1', className]} data-umami-event={`video-play-${video}`}>
+  <div class="relative h-0 overflow-hidden" style={`padding-bottom: ${aspectPadding};`}>
+    <iframe
+      width={width}
+      height={height}
+      src={`https://www.youtube.com/embed/${video}`}
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="absolute inset-0 w-full h-full"
+    ></iframe>
+  </div>
+</div>

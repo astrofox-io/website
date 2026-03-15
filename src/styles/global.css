@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-dark: #111111;
+  --color-dark-surface: #0a0a0a;
+  --color-dark-card: #191919;
+  --color-text: #a1a1aa;
+  --color-text-muted: #71717a;
+  --color-heading: #fafafa;
+  --color-accent: #7c5dd7;
+  --color-accent-dark: #704dd8;
+  --color-border: #27272a;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}

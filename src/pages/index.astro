@@ -1,0 +1,168 @@
+---
+import Button from '../components/Button.astro';
+import Video from '../components/Video.astro';
+import Layout from '../layouts/Layout.astro';
+
+const videos = [
+  { img: 'alex-metric-always-there.jpg', url: 'kSaAldmmno8', alt: 'Alex Metric - Always There' },
+  { img: 'kygo-younger.jpg', url: '3MzXm3ACQGY', alt: 'Kygo - Younger' },
+  { img: 'lucas-nord-voices.jpg', url: 'Stah4jJJ0Ps', alt: 'Lucas Nord - Voices' },
+  { img: 'odesza-late-night.jpg', url: 'Hcx4Noz1Hhk', alt: 'Odesza - Late Night' },
+  { img: 'kaskade-disarm-you.jpg', url: '9PrUOYw88m0', alt: 'Kaskade - Disarm You' },
+];
+
+const features = [
+  {
+    title: 'Audio reactive',
+    description: 'Real-time audio analysis drives your motion graphics. Shapes and effects pulse, rotate and move to the beat of your music.',
+  },
+  {
+    title: 'Real-time rendering',
+    description: 'No keyframes. No waiting. Everything renders live. Add and manipulate effects while your music plays.',
+  },
+  {
+    title: 'Intuitive interface',
+    description: 'A streamlined interface to control every visual element. Experiment with new ideas and see results instantly.',
+  },
+  {
+    title: 'Layer and blend',
+    description: 'Compose individual scenes with their own displays and effects. Blend them together to create something unique.',
+  },
+];
+---
+
+<Layout>
+  <!-- Hero -->
+  <section class="text-center pt-16 pb-20">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-heading leading-[1.1]">
+        Turn <span class="text-accent">audio</span> into stunning <span class="text-accent">visuals</span>
+      </h1>
+      <p class="mt-6 text-lg text-text-muted max-w-2xl mx-auto">
+        Free, open-source motion graphics for music. Create audio-reactive
+        visuals and export high-definition video.
+      </p>
+      <div class="mt-8">
+        <Button href="https://app.astrofox.io" target="_blank" rel="noopener" data-umami-event="download-button-intro" class="text-lg px-10 py-4">
+          Launch Astrofox
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshot -->
+  <section class="mb-24">
+    <div class="max-w-4xl mx-auto">
+      <div id="video-screenshot" class="relative cursor-pointer group rounded-xl overflow-hidden border border-border" data-umami-event="video-screenshot">
+        <img src="/images/screenshot.jpg" class="w-full block" alt="Astrofox screenshot" />
+        <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <svg class="w-20 h-20 fill-white/90" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 33.4 0 42z"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="mb-24">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-heading">Why Astrofox</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {features.map((feature, i) => (
+        <div class="group rounded-2xl border border-border bg-dark-card p-8 hover:border-accent/40 transition-colors">
+          <div class="text-xs font-medium uppercase tracking-widest text-accent mb-4">0{i + 1}</div>
+          <h3 class="text-xl font-semibold text-heading">{feature.title}</h3>
+          <p class="mt-3 text-sm text-text-muted leading-relaxed">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section id="videos" class="text-center mb-24">
+    <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-heading mb-10">Made with Astrofox</h2>
+    <div class="flex justify-center items-center flex-wrap gap-3 mb-8">
+      {videos.map((v, i) => (
+        <div
+          class:list={[
+            'cursor-pointer rounded-lg overflow-hidden border-2 transition-colors thumbnail-item',
+            i === 0 ? 'border-accent' : 'border-transparent hover:border-border',
+          ]}
+          data-video={v.url}
+          data-umami-event={`video-thumbnail-${v.url}`}
+        >
+          <img src={`/images/videos/${v.img}`} class="w-20 h-20 sm:w-24 sm:h-24 object-cover block" alt={v.alt} />
+        </div>
+      ))}
+    </div>
+    <Video video={videos[0].url} width={720} height={720} id="video-player" class="max-w-[720px]" />
+  </section>
+
+  <section class="text-center mb-24 text-sm text-text-muted">
+    Looking for the old version? <a href="https://github.com/astrofox-io/astrofox/releases" target="_blank" rel="noopener" class="text-accent hover:text-heading transition-colors">Download here</a>
+  </section>
+</Layout>
+
+<!-- Video overlay -->
+<div id="video-overlay" class="fixed inset-0 z-50 hidden justify-center items-center">
+  <div class="absolute inset-0 bg-black/90"></div>
+  <div id="video-overlay-close" class="absolute top-6 right-6 text-2xl text-text-muted cursor-pointer z-10 hover:text-heading transition-colors">✕</div>
+  <div class="relative z-10 w-full max-w-[calc(100vh*1.5625)] px-6">
+    <div class="relative h-0 overflow-hidden rounded-xl" style="padding-bottom: 56.25%;">
+      <iframe
+        id="overlay-iframe"
+        width="1920"
+        height="1080"
+        src=""
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="absolute inset-0 w-full h-full"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  const screenshot = document.getElementById('video-screenshot');
+  const overlay = document.getElementById('video-overlay');
+  const overlayClose = document.getElementById('video-overlay-close');
+  const overlayIframe = document.getElementById('overlay-iframe') as HTMLIFrameElement;
+
+  screenshot?.addEventListener('click', () => {
+    overlayIframe.src = 'https://www.youtube.com/embed/IbvuniqNPPw?autoplay=1';
+    overlay?.classList.remove('hidden');
+    overlay?.classList.add('flex');
+  });
+
+  function closeOverlay() {
+    overlay?.classList.add('hidden');
+    overlay?.classList.remove('flex');
+    overlayIframe.src = '';
+  }
+
+  overlayClose?.addEventListener('click', closeOverlay);
+  overlay?.addEventListener('click', (e) => {
+    if (e.target === overlay || (e.target as HTMLElement).closest('#video-overlay-close') || !(e.target as HTMLElement).closest('.relative.z-10')) {
+      closeOverlay();
+    }
+  });
+
+  const thumbnails = document.querySelectorAll('.thumbnail-item');
+  const videoIframe = document.querySelector('#video-player iframe') as HTMLIFrameElement;
+
+  thumbnails.forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      const videoId = (thumb as HTMLElement).dataset.video;
+      if (videoId && videoIframe) {
+        videoIframe.src = `https://www.youtube.com/embed/${videoId}`;
+        thumbnails.forEach((t) => {
+          t.classList.remove('border-accent');
+          t.classList.add('border-transparent');
+        });
+        thumb.classList.remove('border-transparent');
+        thumb.classList.add('border-accent');
+      }
+    });
+  });
+</script>

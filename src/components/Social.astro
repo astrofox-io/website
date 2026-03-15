@@ -1,0 +1,25 @@
+---
+import Discord from './icons/Discord.astro';
+import Facebook from './icons/Facebook.astro';
+import Instagram from './icons/Instagram.astro';
+import Reddit from './icons/Reddit.astro';
+import Twitter from './icons/Twitter.astro';
+
+const iconClass = 'w-4 h-4 fill-current';
+
+const links = [
+  { href: 'https://discord.gg/wJ6pyMZ', event: 'discord-button', Icon: Discord },
+  { href: 'https://www.reddit.com/r/astrofox/', event: 'reddit-button', Icon: Reddit },
+  { href: 'https://twitter.com/astrofox_io', event: 'twitter-button', Icon: Twitter },
+  { href: 'https://www.instagram.com/astrofox.io/', event: 'instagram-button', Icon: Instagram },
+  { href: 'https://www.facebook.com/astrofox.io', event: 'facebook-button', Icon: Facebook },
+];
+---
+
+<div class="flex items-center gap-4">
+  {links.map(({ href, event, Icon }) => (
+    <a href={href} data-umami-event={event} rel="noopener" target="_blank" class="text-text-muted hover:text-heading transition-colors">
+      <Icon class={iconClass} />
+    </a>
+  ))}
+</div>

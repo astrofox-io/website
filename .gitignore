@@ -20,6 +20,8 @@
 .idea
 *.iml
 .astro
+.vercel
+dist
 
 # debug
 npm-debug.log*
