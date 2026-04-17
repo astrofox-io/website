@@ -1,0 +1,46 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Documentation"
+  description="Learn how to create audio-reactive motion graphics with Astrofox."
+>
+  <p>
+    Astrofox is a free, browser-based motion graphics program that turns music
+    into visuals. Drop in an audio file, layer displays and effects, wire them
+    up to audio reactors, and export a high-definition video.
+  </p>
+
+  <h2>New here?</h2>
+  <p>Start with these three pages to get a feel for the app:</p>
+  <ol>
+    <li><a href="/docs/interface">Interface tour</a> &mdash; the main panels and what they do.</li>
+    <li><a href="/docs/quick-start">Quick start</a> &mdash; build your first visualization in a few minutes.</li>
+    <li><a href="/docs/reactors">Reactors</a> &mdash; how audio drives motion.</li>
+  </ol>
+
+  <h2>How it fits together</h2>
+  <p>
+    A <strong>project</strong> contains one or more <strong>scenes</strong>.
+    Each scene holds a stack of <strong>displays</strong> (the visual elements
+    like text, shapes and spectrums) and <strong>effects</strong> (post-processing
+    filters like blur, glitch and color). <strong>Reactors</strong> analyze the
+    audio and output a value that can be bound to any numeric property on a
+    display or effect &mdash; that's what makes things move to the beat.
+  </p>
+
+  <h2>Launch the app</h2>
+  <p>
+    Astrofox runs in the browser at
+    <a href="https://app.astrofox.io" target="_blank" rel="noopener">app.astrofox.io</a>.
+    There's nothing to install.
+  </p>
+
+  <h2>Community</h2>
+  <ul>
+    <li>Chat on <a href="https://discord.gg/wJ6pyMZ" target="_blank" rel="noopener">Discord</a></li>
+    <li>Browse examples on <a href="https://www.reddit.com/r/astrofox/" target="_blank" rel="noopener">Reddit</a></li>
+    <li>File bugs on <a href="https://github.com/astrofox-io/astrofox/issues" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+</DocsLayout>

@@ -1,0 +1,77 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Effects"
+  description="Post-processing filters applied to a scene's output."
+>
+  <p>
+    Effects process the rendered output of their parent scene. They stack in
+    order &mdash; the top of the Effects list runs first. Like displays, they
+    can be reordered, toggled, and bound to reactors.
+  </p>
+
+  <h2>Adding an effect</h2>
+  <p>
+    Click the <strong>+</strong> in the Effects row of a scene and pick from the
+    menu. Effects are grouped by category.
+  </p>
+  <div class="placeholder">Screenshot: Add Effects menu open</div>
+
+  <h2>Color</h2>
+  <ul class="pill-list">
+    <li>Color</li>
+    <li>Brightness / Contrast</li>
+    <li>Hue / Saturation</li>
+    <li>Sepia</li>
+    <li>Tone Mapping</li>
+    <li>Color Average</li>
+    <li>Color Depth</li>
+  </ul>
+  <p>Tone and color grading. Color tints the whole scene with a blend mode.</p>
+
+  <h2>Blur &amp; Focus</h2>
+  <ul class="pill-list">
+    <li>Blur</li>
+    <li>Bloom</li>
+    <li>Depth of Field</li>
+    <li>Tilt Shift</li>
+  </ul>
+  <p>Soften parts of the image or add a cinematic glow.</p>
+
+  <h2>Distortion</h2>
+  <ul class="pill-list">
+    <li>Distortion</li>
+    <li>Glitch</li>
+    <li>Kaleidoscope</li>
+    <li>Mirror</li>
+    <li>RGB Shift</li>
+  </ul>
+  <p>Warp, displace, or chromatically split the image.</p>
+
+  <h2>Pattern</h2>
+  <ul class="pill-list">
+    <li>ASCII</li>
+    <li>Color Halftone</li>
+    <li>Dot Screen</li>
+    <li>LED</li>
+    <li>Pixelate</li>
+    <li>Scanline</li>
+  </ul>
+  <p>Overlay a repeating pattern that turns the scene into dots, pixels, or characters.</p>
+
+  <h2>Stylize</h2>
+  <ul class="pill-list">
+    <li>Noise</li>
+    <li>Perlin Noise</li>
+    <li>Vignette</li>
+  </ul>
+  <p>Film-grain, procedural noise, and edge falloff.</p>
+
+  <h2>Ordering matters</h2>
+  <p>
+    Effect order changes the final look. Bloom before Color produces a different
+    result than Color before Bloom. Drag to reorder in the Layers panel.
+  </p>
+</DocsLayout>

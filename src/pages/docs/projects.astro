@@ -1,0 +1,46 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Projects"
+  description="Create, open, save, and configure Astrofox projects."
+>
+  <p>
+    A project contains your scenes, displays, effects, reactors, audio
+    selection, and canvas settings. Project files use the <code>.afx</code>
+    extension.
+  </p>
+
+  <h2>New project</h2>
+  <p>
+    Click <strong>New project</strong> in the sidebar. If you have unsaved
+    changes, Astrofox prompts you first.
+  </p>
+
+  <h2>Open project</h2>
+  <p>
+    Click <strong>Open project</strong> to bring up the Project Browser. Pick a
+    saved <code>.afx</code> file. If media referenced by the project can't be
+    found, Astrofox shows a Relink Media dialog.
+  </p>
+
+  <h2>Save project</h2>
+  <p>
+    Click <strong>Save project</strong>. Projects can be saved to disk via the
+    browser's File System Access API.
+  </p>
+
+  <h2>Project settings</h2>
+  <p>
+    Open <strong>Project settings</strong> from the sidebar. This is also where
+    you configure the canvas format and background.
+  </p>
+  <div class="placeholder">Screenshot: Project Settings modal &mdash; title, format, size, background color</div>
+  <ul>
+    <li><strong>Title</strong> &mdash; project name shown in the title bar.</li>
+    <li><strong>Format</strong> &mdash; aspect ratio. Choices: Square (1:1), Portrait (9:16), Landscape (16:9), Mobile portrait (3:4), Mobile landscape (4:3).</li>
+    <li><strong>Size</strong> &mdash; base resolution: 480p, 720p, or 1080p. Combined with format to determine output width &times; height.</li>
+    <li><strong>Background color</strong> &mdash; color of the stage behind all scenes.</li>
+  </ul>
+</DocsLayout>

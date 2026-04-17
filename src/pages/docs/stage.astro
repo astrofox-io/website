@@ -1,0 +1,33 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Stage"
+  description="The live preview canvas in the middle of the workspace."
+>
+  <div class="placeholder">Screenshot: Stage viewport</div>
+
+  <h2>Canvas</h2>
+  <p>
+    The stage shows your composition at the resolution set in
+    <a href="/docs/projects">Project settings</a>. Everything visible here is
+    what gets exported in <a href="/docs/exporting">Save image</a> or
+    <a href="/docs/exporting">Save video</a>.
+  </p>
+
+  <h2>Selecting &amp; moving</h2>
+  <p>
+    Click a display on the stage to select it. Click and drag to move it. The
+    Controls panel on the right immediately switches to that display's
+    properties so you can tweak values while you work.
+  </p>
+  <div class="placeholder">Screenshot: Text display selected on the stage</div>
+
+  <h2>Zoom</h2>
+  <p>
+    Use the zoom control in the status bar to fit the canvas to the viewport
+    or zoom to a specific level. Useful when you're working on a tall portrait
+    (9:16) canvas on a wide monitor.
+  </p>
+</DocsLayout>

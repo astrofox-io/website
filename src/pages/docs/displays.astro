@@ -1,0 +1,93 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Displays"
+  description="The visual elements that render into a scene."
+>
+  <p>
+    A display is a single visual element &mdash; text, a spectrum, a 3D tunnel,
+    an image, etc. Displays live inside scenes and can be reordered, enabled
+    or disabled, and bound to audio reactors.
+  </p>
+
+  <h2>Adding a display</h2>
+  <p>
+    In the Layers panel, click the <strong>+</strong> in the Displays row of a
+    scene. Choose from the 2D or 3D menu.
+  </p>
+  <div class="placeholder">Screenshot: Add 2D Display menu open</div>
+
+  <h2>2D displays</h2>
+
+  <h3>Text</h3>
+  <p>Renders a text string with customizable font, size, color, alignment, stroke, and position.</p>
+
+  <h3>Image</h3>
+  <p>
+    Places an image on the stage. Supports common formats (PNG, JPG, GIF). Size
+    and position are animatable through reactors.
+  </p>
+
+  <h3>Video</h3>
+  <p>
+    Plays a video clip on the stage. Useful for compositing pre-rendered
+    content behind your audio visuals.
+  </p>
+
+  <h3>Shape</h3>
+  <p>
+    A filled primitive (rectangle, circle, etc.) with color, size, and
+    position properties.
+  </p>
+
+  <h3>Bar Spectrum</h3>
+  <p>
+    Classic frequency-band bars that react to the audio's FFT. Control bar
+    count, width, spacing, color, and frequency range.
+  </p>
+
+  <h3>Wave Spectrum</h3>
+  <p>
+    A smoothed wave derived from the spectrum. Tends to look softer than Bar
+    Spectrum.
+  </p>
+
+  <h3>Sound Wave</h3>
+  <p>
+    The raw audio waveform drawn as a line. Thickness, color, and amplitude are
+    adjustable.
+  </p>
+
+  <h2>3D displays</h2>
+  <p>
+    3D displays render via WebGL and benefit from being placed in their own
+    scene so you can layer 2D text or overlays on top.
+  </p>
+
+  <h3>Geometry</h3>
+  <p>
+    A solid 3D shape (box, sphere, torus, etc.) that rotates and scales. A good
+    first 3D display.
+  </p>
+
+  <h3>Tunnel</h3>
+  <p>A repeating tube that creates a forward-motion, flythrough effect.</p>
+
+  <h3>Cubes</h3>
+  <p>A grid of cubes that react individually to frequency bands.</p>
+
+  <h3>Mesh Grid</h3>
+  <p>A wireframe plane that deforms with the audio.</p>
+
+  <h2>3D menu</h2>
+  <div class="placeholder">Screenshot: Add 3D Display menu open</div>
+
+  <h2>Display controls</h2>
+  <div class="placeholder">Screenshot: Display controls panel</div>
+  <p>
+    Almost every numeric or color property has a small circle next to it &mdash;
+    that's the reactor binding. See <a href="/docs/reactors">Reactors</a>.
+  </p>
+</DocsLayout>
