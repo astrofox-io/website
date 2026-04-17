@@ -1,0 +1,52 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Scenes & layers"
+  description="Organize your composition into layered scenes with displays and effects."
+>
+  <h2>What a scene is</h2>
+  <p>
+    A scene is a container for a group of displays and effects. Think of it
+    like a layer in a design tool &mdash; each scene renders on top of the ones
+    below, and effects only apply to their own scene.
+  </p>
+  <div class="placeholder">Screenshot: Scenes in the Layers panel</div>
+
+  <h2>The Layers panel</h2>
+  <p>Every scene has two sections:</p>
+  <ul>
+    <li><strong>Displays</strong> &mdash; visual elements rendered into the scene.</li>
+    <li><strong>Effects</strong> &mdash; post-processing filters applied to the scene's output.</li>
+  </ul>
+
+  <h2>Adding a scene</h2>
+  <p>
+    Click the <strong>+</strong> in the Layers panel header. New scenes appear
+    at the top of the stack.
+  </p>
+
+  <h2>Reordering</h2>
+  <p>
+    Drag scenes, displays, or effects to reorder them. The visual stack matches
+    the panel order &mdash; the top entry in the Layers panel renders on top on
+    the stage.
+  </p>
+
+  <h2>Enable / disable</h2>
+  <p>
+    Each scene, display, and effect has a toggle. Disabled items are skipped
+    during render but stay in the project so you can bring them back.
+  </p>
+
+  <h2>Rename a layer</h2>
+  <p>Double-click a layer name in the panel to rename it.</p>
+
+  <h2>Blending scenes</h2>
+  <p>
+    Because effects are scoped per scene, you can apply a heavy blur or glitch
+    to one scene without touching the others. Stack multiple scenes to build
+    depth.
+  </p>
+</DocsLayout>

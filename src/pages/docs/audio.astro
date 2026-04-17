@@ -1,0 +1,45 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Audio"
+  description="Load audio files, use the player, and work with live input."
+>
+  <h2>Loading an audio file</h2>
+  <p>
+    Click <strong>Load audio</strong> in the sidebar and pick a file.
+    Supported formats include MP3, WAV, OGG, and other browser-supported
+    audio types. The file is analyzed and its waveform appears in the
+    player at the bottom of the window.
+  </p>
+
+  <h2>The player</h2>
+  <div class="placeholder">Screenshot: The audio player</div>
+  <p>The player provides:</p>
+  <ul>
+    <li><strong>Play / pause</strong> &mdash; starts or stops the audio and animation.</li>
+    <li><strong>Progress bar</strong> &mdash; scrub to any point in the track.</li>
+    <li><strong>Waveform</strong> &mdash; visual overview of the whole track.</li>
+    <li><strong>Time display</strong> &mdash; current time and total duration.</li>
+    <li><strong>Volume</strong> &mdash; playback volume (doesn't affect exported video).</li>
+  </ul>
+
+  <h2>Live input mode</h2>
+  <p>
+    Instead of a file, Astrofox can drive visuals from live input. Toggle
+    <strong>Live mode</strong> in the player to switch the source.
+  </p>
+  <div class="placeholder">Screenshot: Live mode panel with source picker</div>
+  <h3>Microphone</h3>
+  <p>
+    Select a microphone device from the list. Astrofox requests mic permissions
+    from the browser. An oscilloscope replaces the waveform so you can see the
+    live signal.
+  </p>
+  <h3>MIDI</h3>
+  <p>
+    Astrofox can also listen to a MIDI controller. Select a MIDI input device
+    and Astrofox will route incoming note/CC data into the reactor system.
+  </p>
+</DocsLayout>

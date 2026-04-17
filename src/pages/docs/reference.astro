@@ -1,0 +1,83 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Reference"
+  description="Formats, limits, and places to get help."
+>
+  <h2>Supported formats</h2>
+
+  <h3>Audio</h3>
+  <ul class="pill-list">
+    <li>MP3</li>
+    <li>WAV</li>
+    <li>OGG</li>
+    <li>M4A</li>
+    <li>FLAC</li>
+  </ul>
+  <p>
+    Any format your browser can decode will work. MP3 and WAV are the most
+    universally supported.
+  </p>
+
+  <h3>Image</h3>
+  <ul class="pill-list">
+    <li>PNG</li>
+    <li>JPG</li>
+    <li>GIF</li>
+    <li>WebP</li>
+  </ul>
+
+  <h3>Video input</h3>
+  <ul class="pill-list">
+    <li>MP4 (H.264)</li>
+    <li>WebM</li>
+  </ul>
+
+  <h3>Video output</h3>
+  <p>
+    Exported videos are <strong>WebM</strong> (VP9 codec). Use FFmpeg or a
+    similar tool to transcode to MP4 if needed.
+  </p>
+
+  <h2>Canvas presets</h2>
+  <table class="w-full border border-border rounded-md overflow-hidden my-4">
+    <thead class="bg-dark-card">
+      <tr>
+        <th class="text-left px-3 py-2 text-sm text-heading font-medium">Format</th>
+        <th class="text-left px-3 py-2 text-sm text-heading font-medium">720p</th>
+        <th class="text-left px-3 py-2 text-sm text-heading font-medium">1080p</th>
+      </tr>
+    </thead>
+    <tbody class="text-sm">
+      <tr class="border-t border-border"><td class="px-3 py-2">Square (1:1)</td><td class="px-3 py-2">720 × 720</td><td class="px-3 py-2">1080 × 1080</td></tr>
+      <tr class="border-t border-border"><td class="px-3 py-2">Portrait (9:16)</td><td class="px-3 py-2">720 × 1280</td><td class="px-3 py-2">1080 × 1920</td></tr>
+      <tr class="border-t border-border"><td class="px-3 py-2">Landscape (16:9)</td><td class="px-3 py-2">1280 × 720</td><td class="px-3 py-2">1920 × 1080</td></tr>
+      <tr class="border-t border-border"><td class="px-3 py-2">Mobile portrait (3:4)</td><td class="px-3 py-2">720 × 960</td><td class="px-3 py-2">1080 × 1440</td></tr>
+      <tr class="border-t border-border"><td class="px-3 py-2">Mobile landscape (4:3)</td><td class="px-3 py-2">960 × 720</td><td class="px-3 py-2">1440 × 1080</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Limits</h2>
+  <ul>
+    <li>Minimum video export duration: <strong>5 seconds</strong>.</li>
+    <li>Audio is analyzed with a 2048-bin FFT at 44.1 kHz.</li>
+  </ul>
+
+  <h2>Browser compatibility</h2>
+  <p>
+    Astrofox uses modern web APIs &mdash; WebGL, Web Audio, File System
+    Access, MediaRecorder. Recent Chromium browsers (Chrome, Edge, Brave) give
+    the best experience. Firefox and Safari work but may have limited file
+    save support.
+  </p>
+
+  <h2>Community &amp; support</h2>
+  <ul>
+    <li>Chat: <a href="https://discord.gg/wJ6pyMZ" target="_blank" rel="noopener">Discord</a></li>
+    <li>Forum: <a href="https://www.reddit.com/r/astrofox/" target="_blank" rel="noopener">r/astrofox</a></li>
+    <li>Bugs: <a href="https://github.com/astrofox-io/astrofox/issues" target="_blank" rel="noopener">GitHub issues</a></li>
+    <li>Source: <a href="https://github.com/astrofox-io/astrofox" target="_blank" rel="noopener">GitHub repo</a></li>
+  </ul>
+</DocsLayout>

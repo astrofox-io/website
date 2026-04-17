@@ -1,0 +1,63 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Quick start"
+  description="Build your first audio-reactive visual in about five minutes."
+>
+  <h2>1. Open Astrofox</h2>
+  <p>
+    Go to <a href="https://app.astrofox.io" target="_blank" rel="noopener">app.astrofox.io</a>.
+    The app opens to an empty project with a single scene.
+  </p>
+
+  <h2>2. Load an audio track</h2>
+  <p>
+    Click <strong>Load audio</strong> in the sidebar and pick an MP3, WAV, or OGG file.
+    The waveform appears in the player at the bottom.
+  </p>
+
+  <h2>3. Add a display</h2>
+  <p>
+    In the Layers panel, expand your scene and click the <strong>+</strong> in the
+    Displays row. Pick something like <strong>Bar Spectrum</strong> from the 2D menu.
+    You should immediately see bars on the stage.
+  </p>
+
+  <h2>4. Press play</h2>
+  <p>
+    Hit the play button in the player. The spectrum animates to the audio.
+  </p>
+
+  <h2>5. Add an effect</h2>
+  <p>
+    Click the <strong>+</strong> in the Effects row of your scene. Try
+    <strong>Bloom</strong> or <strong>Glitch</strong>. Effects apply on top of
+    all displays in the same scene.
+  </p>
+
+  <h2>6. Add a reactor</h2>
+  <p>
+    Reactors make any numeric property move with the audio.
+  </p>
+  <ol>
+    <li>In the left panel, click <strong>+</strong> next to Reactors.</li>
+    <li>Select the reactor and drag a selection box over a frequency range in the FFT view.</li>
+    <li>Select your Bar Spectrum display. Click the small circle next to a property like <strong>Height</strong>.</li>
+    <li>Pick your reactor. The property now pulses with the audio.</li>
+  </ol>
+  <p>See <a href="/docs/reactors">Reactors</a> for the details.</p>
+
+  <h2>7. Export</h2>
+  <p>
+    Click <strong>Save video</strong> in the sidebar. Choose a save location,
+    pick a start/end range, and hit <strong>Save video</strong>. Astrofox records
+    the stage in real time.
+  </p>
+
+  <div class="callout">
+    That's the whole loop: load audio, add displays, add effects, wire reactors,
+    export. Everything else is detail.
+  </div>
+</DocsLayout>

@@ -1,0 +1,56 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Exporting"
+  description="Save a still frame or record your composition to video."
+>
+  <h2>Save image</h2>
+  <p>
+    Click <strong>Save image</strong> in the sidebar to export the current
+    stage frame as a PNG. The image uses the canvas resolution configured in
+    <a href="/docs/projects">Project settings</a>.
+  </p>
+
+  <h2>Save video</h2>
+  <div class="placeholder">Screenshot: Save Video dialog</div>
+  <p>
+    Click <strong>Save video</strong> to open the export dialog. Astrofox
+    records the stage in real time.
+  </p>
+
+  <h3>Audio source</h3>
+  <p>
+    Pick the audio file to encode into the video. This can be the same file you
+    loaded in the player or a different one (handy if you want a clean source
+    without effects). Required.
+  </p>
+
+  <h3>Save location</h3>
+  <p>Choose where the <code>.webm</code> file goes. Required.</p>
+
+  <h3>Time duration</h3>
+  <p>
+    Set the start and end time. The minimum export length is 5 seconds. The
+    range is shown both as time inputs and as a draggable handle over the
+    waveform.
+  </p>
+
+  <h3>Include audio</h3>
+  <p>
+    On by default &mdash; the audio track is encoded into the video. Turn it
+    off to get a silent video file.
+  </p>
+
+  <h3>Recording</h3>
+  <p>
+    Once started, Astrofox plays the track from the chosen start time and
+    records the stage frame-by-frame. Keep the tab focused while recording.
+  </p>
+
+  <div class="callout">
+    Output is WebM (VP9). You can convert to MP4 with a tool like FFmpeg if
+    you need a different container.
+  </div>
+</DocsLayout>

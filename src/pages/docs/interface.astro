@@ -1,0 +1,64 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Interface tour"
+  description="A quick walkthrough of the Astrofox workspace."
+>
+  <div class="placeholder">Screenshot: Astrofox workspace overview</div>
+
+  <p>The workspace is divided into five regions:</p>
+
+  <h2>Title bar</h2>
+  <p>
+    Shows the current project name and provides access to window controls.
+  </p>
+
+  <h2>Sidebar &amp; left panel</h2>
+  <p>
+    The sidebar on the far left has quick actions for
+    <strong>New project</strong>, <strong>Open project</strong>,
+    <strong>Save project</strong>, <strong>Load audio</strong>,
+    <strong>Save image</strong>, <strong>Save video</strong>, and
+    <strong>Project settings</strong>.
+  </p>
+  <p>
+    The left panel itself splits into two sections:
+  </p>
+  <ul>
+    <li><strong>Layers</strong> &mdash; scenes and the displays/effects inside them.</li>
+    <li><strong>Reactors</strong> &mdash; audio reactors you've created.</li>
+  </ul>
+  <div class="placeholder">Screenshot: Layers panel with scenes, displays and effects</div>
+
+  <h2>Stage</h2>
+  <p>
+    The main viewport in the center of the window. It shows a live preview of
+    your composition at the project's canvas resolution. You can select and
+    transform displays directly on the stage.
+  </p>
+  <div class="placeholder">Screenshot: Stage viewport</div>
+
+  <h2>Right panel (controls)</h2>
+  <p>
+    When you select a display, effect, or reactor in the Layers panel, its
+    properties appear here. This is where you tweak colors, sizes, positions,
+    and bind properties to reactors.
+  </p>
+  <div class="placeholder">Screenshot: Controls panel</div>
+
+  <h2>Bottom panel (player)</h2>
+  <p>
+    The audio player and reactor editor live here. Play, pause, scrub through
+    the track, and see the live waveform. When a reactor is selected, its
+    frequency-band picker appears next to the player.
+  </p>
+  <div class="placeholder">Screenshot: Player bar</div>
+
+  <h2>Status bar</h2>
+  <p>
+    A thin strip along the bottom that reports current state &mdash; dirty project,
+    active scene, and zoom level.
+  </p>
+</DocsLayout>

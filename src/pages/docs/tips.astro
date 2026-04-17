@@ -1,0 +1,78 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Tips & troubleshooting"
+  description="Workflow suggestions and fixes for common issues."
+>
+  <h2>Workflow tips</h2>
+
+  <h3>Use one reactor per frequency band</h3>
+  <p>
+    Create a "bass", "mid", and "high" reactor once, then reuse them across
+    displays and effects. It's easier to tune three reactors than ten.
+  </p>
+
+  <h3>Stack scenes for depth</h3>
+  <p>
+    Put your background (e.g. a blurred geometry or tunnel) in one scene, your
+    main element (spectrum) in another, and your foreground (text, vignette)
+    in a third. You can tweak each layer independently.
+  </p>
+
+  <h3>Save often</h3>
+  <p>
+    The browser can reload or crash. Save your project file before long
+    sessions.
+  </p>
+
+  <h2>Performance</h2>
+
+  <h3>Lower the canvas resolution while building</h3>
+  <p>
+    1080p at 60fps is expensive, especially with heavy effects. Work at 720p
+    and bump it up before export.
+  </p>
+
+  <h3>Fewer effects = smoother preview</h3>
+  <p>
+    Post-processing effects (especially Bloom, Depth of Field, and big blurs)
+    are the biggest cost. Disable ones you aren't actively tuning.
+  </p>
+
+  <h3>Close other tabs</h3>
+  <p>
+    Astrofox uses the GPU. Other tabs running video or WebGL compete for it.
+  </p>
+
+  <h2>Troubleshooting</h2>
+
+  <h3>Audio won't play</h3>
+  <p>
+    Browsers require a user interaction before audio can play. Click anywhere
+    in the app first, then press play. If you're using Live input, check that
+    you've granted mic/MIDI permission in your browser.
+  </p>
+
+  <h3>Project won't open / references missing media</h3>
+  <p>
+    If a project references an image, video, or audio file that isn't where it
+    used to be, Astrofox shows a Relink Media dialog on open. Point it at the
+    file's new location.
+  </p>
+
+  <h3>Export is laggy or drops frames</h3>
+  <p>
+    Video export runs in real time. If your preview doesn't hit 60fps, neither
+    will the export. Lower the resolution, disable heavy effects, or split the
+    project into fewer scenes.
+  </p>
+
+  <h3>Nothing is moving</h3>
+  <p>
+    Make sure a reactor is bound to at least one property. A display can be on
+    the stage without animating &mdash; the reactor connection is what makes
+    it react.
+  </p>
+</DocsLayout>
