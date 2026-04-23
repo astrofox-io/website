@@ -1,0 +1,51 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="FAQ"
+  description="Short answers to common questions that do not need a full guide."
+>
+  <h2>Do I need to install Astrofox?</h2>
+  <p>
+    No. Astrofox runs in the browser at
+    <a href="https://app.astrofox.io" target="_blank" rel="noopener">app.astrofox.io</a>.
+  </p>
+
+  <h2>What file formats can I load?</h2>
+  <p>
+    Audio, image, and video support depends partly on the browser, but common
+    formats such as MP3, WAV, PNG, JPG, MP4, and WebM are the safest choices.
+    See <a href="/docs/reference">Reference</a> for the current list.
+  </p>
+
+  <h2>Why is my export a WebM file?</h2>
+  <p>
+    Astrofox exports WebM video. If you need MP4, transcode the finished file
+    with FFmpeg or another video tool after export.
+  </p>
+
+  <h2>Can I use live microphone input?</h2>
+  <p>
+    Yes. Switch the player to live mode and allow microphone access when the
+    browser prompts you.
+  </p>
+
+  <h2>Can I reuse the same reactor across several properties?</h2>
+  <p>
+    Yes, and you usually should. Reusing a few well-tuned reactors makes the
+    whole composition feel more coherent.
+  </p>
+
+  <h2>Why does the preview look different from the export?</h2>
+  <p>
+    Most of the time this is a performance problem. Heavy scenes that cannot
+    preview smoothly also tend to export poorly. Check <a href="/docs/performance">Performance tuning</a>.
+  </p>
+
+  <h2>Where should I go if something seems broken?</h2>
+  <p>
+    Start with <a href="/docs/tips">Tips & troubleshooting</a>. If the issue
+    persists, file a report through the community links in <a href="/docs/reference">Reference</a>.
+  </p>
+</DocsLayout>

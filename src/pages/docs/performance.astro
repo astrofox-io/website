@@ -1,0 +1,56 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Performance tuning"
+  description="How to keep previews responsive and exports dependable as projects get heavier."
+>
+  <p>
+    Performance issues usually come from resolution, effect cost, and scene
+    complexity together. Fixing just one of those often gets you back to a
+    usable preview immediately.
+  </p>
+
+  <h2>Start with resolution</h2>
+  <p>
+    Work at 720p while building, especially if you are stacking multiple scenes
+    or several blur-based effects. Raise the canvas size only when you are
+    ready to export.
+  </p>
+
+  <h2>Know the expensive effects</h2>
+  <ul>
+    <li>Bloom, Depth of Field, Tilt Shift, and large Blur settings are usually the first things to disable.</li>
+    <li>Pattern effects can also get expensive at high resolution.</li>
+    <li>Several subtle effects stacked together often cost more than one bold effect.</li>
+  </ul>
+
+  <h2>Reduce scene complexity</h2>
+  <ul>
+    <li>Hide scenes you are not actively tuning.</li>
+    <li>Use fewer simultaneously animated properties.</li>
+    <li>Prefer one strong background display over several weak ones.</li>
+    <li>Keep text and overlays in separate scenes so you can isolate problems quickly.</li>
+  </ul>
+
+  <h2>Tune reactors for stability</h2>
+  <p>
+    Jittery reactors can make you overcompensate with extra effects or extra
+    bindings. Increase smoothing and reduce the number of animated targets
+    before adding more complexity.
+  </p>
+
+  <h2>Before a long export</h2>
+  <ol>
+    <li>Preview the heaviest section of the track.</li>
+    <li>Disable anything you cannot clearly see in the final composition.</li>
+    <li>Close other tabs using video or WebGL.</li>
+    <li>Run a short export test before committing to the full duration.</li>
+  </ol>
+
+  <div class="callout">
+    If preview frame rate drops badly, export quality usually drops with it.
+    Treat preview smoothness as your first export check.
+  </div>
+</DocsLayout>

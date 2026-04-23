@@ -1,0 +1,53 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Common workflows"
+  description="Step-by-step patterns for the kinds of visuals people build most often."
+>
+  <p>
+    These workflows are intentionally opinionated. They give you a reliable
+    starting structure, then you can branch into your own style.
+  </p>
+
+  <h2>Audio spectrum video</h2>
+  <ol>
+    <li>Load a track and set your canvas format in <a href="/docs/projects">Project settings</a>.</li>
+    <li>Add a Bar Spectrum or Wave Spectrum display.</li>
+    <li>Create bass and high-frequency reactors.</li>
+    <li>Add Bloom or Color grading after the display feels right.</li>
+    <li>Export a short test clip before recording the full song.</li>
+  </ol>
+
+  <h2>Logo visualizer</h2>
+  <ol>
+    <li>Import an Image display for the logo.</li>
+    <li>Place a background scene behind it with a Tunnel, Geometry, or Mesh Grid display.</li>
+    <li>Bind low-frequency motion to scale, glow, or background rotation.</li>
+    <li>Add a subtle vignette or blur to keep the logo dominant.</li>
+  </ol>
+
+  <h2>Lyric or title card</h2>
+  <ol>
+    <li>Add a Text display and set alignment first.</li>
+    <li>Use a midrange reactor to move position, size, or opacity slightly.</li>
+    <li>Layer effects gently. Text loses legibility fast under heavy distortion.</li>
+    <li>Keep a separate scene for the background so the text remains easy to tune.</li>
+  </ol>
+
+  <h2>Looping background visual</h2>
+  <ol>
+    <li>Use displays with continuous motion such as Tunnel or Mesh Grid.</li>
+    <li>Prefer slow oscillation over abrupt beat spikes.</li>
+    <li>Check the first and last frames before export if you need a seamless loop.</li>
+    <li>Render a short segment and test it on repeat outside the app.</li>
+  </ol>
+
+  <h2>Social clip export</h2>
+  <p>
+    For short posts, use a portrait or square canvas, reduce detail that only
+    reads on large screens, and test the first few seconds carefully. Social
+    clips need a strong opening frame more than a complex effect stack.
+  </p>
+</DocsLayout>

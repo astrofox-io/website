@@ -1,0 +1,57 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Setup & browser support"
+  description="What you need before you start building visuals in Astrofox."
+>
+  <p>
+    Astrofox runs in the browser. There is no installer, but the browser and
+    machine you use make a real difference to playback smoothness and export
+    reliability.
+  </p>
+
+  <h2>Recommended browser</h2>
+  <p>
+    Recent Chromium-based browsers such as Chrome, Edge, and Brave give the
+    best support for WebGL, Web Audio, file saving, and video recording.
+    Firefox and Safari can work, but some file APIs and export behaviors may be
+    more limited.
+  </p>
+
+  <h2>Recommended hardware</h2>
+  <ul>
+    <li>A modern laptop or desktop from the last few years.</li>
+    <li>A GPU that can handle WebGL smoothly.</li>
+    <li>Enough RAM to keep your browser, media files, and other tabs open without swapping.</li>
+    <li>Headphones or speakers if you are tuning visuals against detailed frequency ranges.</li>
+  </ul>
+
+  <h2>Before your first session</h2>
+  <ol>
+    <li>Open <a href="https://app.astrofox.io" target="_blank" rel="noopener">app.astrofox.io</a>.</li>
+    <li>Allow audio or microphone access if you plan to use live input.</li>
+    <li>Load a short audio file first so you can judge preview performance quickly.</li>
+    <li>Start with a simple display and one reactor before layering on effects.</li>
+  </ol>
+
+  <h2>When performance is tight</h2>
+  <p>
+    If the stage feels sluggish, work at a smaller canvas size, reduce effect
+    count, and close other GPU-heavy tabs. See <a href="/docs/performance">Performance tuning</a>
+    for the detailed checklist.
+  </p>
+
+  <h2>Browser permissions</h2>
+  <ul>
+    <li><strong>Microphone</strong> is required for live mic input.</li>
+    <li><strong>MIDI</strong> access is required if you want to drive visuals from a controller.</li>
+    <li><strong>File access</strong> is used when loading assets and choosing an export destination.</li>
+  </ul>
+
+  <div class="callout">
+    Astrofox is easiest to learn in a desktop Chromium browser with a short
+    audio track and a 720p canvas.
+  </div>
+</DocsLayout>

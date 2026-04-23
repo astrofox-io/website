@@ -1,0 +1,44 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Keyboard shortcuts"
+  description="How keyboard use works in Astrofox, and which keys are the most dependable."
+>
+  <p>
+    Astrofox is primarily designed around visible controls in the workspace.
+    Keyboard support mostly follows normal browser and form behavior, so the
+    most dependable keys are the ones used for focus, dialogs, and text entry.
+  </p>
+
+  <h2>Reliable keys</h2>
+  <ul>
+    <li><strong>Tab</strong> - move forward through buttons, fields, and other controls.</li>
+    <li><strong>Shift + Tab</strong> - move focus backward.</li>
+    <li><strong>Enter</strong> - confirm the focused button or dialog action.</li>
+    <li><strong>Esc</strong> - close the active dialog or cancel the current modal interaction.</li>
+  </ul>
+
+  <h2>Text fields</h2>
+  <ul>
+    <li>Standard browser text editing shortcuts usually apply inside inputs.</li>
+    <li>Use your platform's normal copy, paste, select-all, and cursor movement keys when editing labels or values.</li>
+  </ul>
+
+  <h2>Browser-level commands</h2>
+  <ul>
+    <li>Some browsers may reserve common commands such as save, print, or find.</li>
+    <li>If a keyboard combination opens a browser feature instead of an Astrofox action, use the on-screen control in the app.</li>
+  </ul>
+
+  <h2>Practical advice</h2>
+  <p>
+    For now, the best approach is to learn the visible controls first, then use
+    keyboard navigation to move through forms and dialogs faster. If you are
+    looking for workflow speedups, <a href="/docs/quick-start">Quick start</a>,
+    <a href="/docs/reactor-recipes">Reactor recipes</a>, and
+    <a href="/docs/performance">Performance tuning</a> will save more time than
+    memorizing browser-dependent key combinations.
+  </p>
+</DocsLayout>

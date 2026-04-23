@@ -1,0 +1,66 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Glossary"
+  description="A quick definition list for the core terms used across the docs."
+>
+  <h2>Project</h2>
+  <p>
+    The top-level file that stores your scenes, displays, effects, reactors,
+    and canvas settings.
+  </p>
+
+  <h2>Scene</h2>
+  <p>
+    A container that holds a stack of displays and effects. Scenes are how you
+    separate layers of a composition.
+  </p>
+
+  <h2>Display</h2>
+  <p>
+    A visual element rendered in a scene, such as text, an image, a spectrum,
+    or a 3D object.
+  </p>
+
+  <h2>Effect</h2>
+  <p>
+    A post-processing filter that changes the rendered output of a scene after
+    its displays are drawn.
+  </p>
+
+  <h2>Reactor</h2>
+  <p>
+    A signal source derived from audio or live input that can be bound to a
+    numeric property to animate it.
+  </p>
+
+  <h2>Binding</h2>
+  <p>
+    The connection between a reactor and a property such as size, opacity,
+    position, intensity, or rotation.
+  </p>
+
+  <h2>Stage</h2>
+  <p>
+    The main preview canvas where the current composition is rendered.
+  </p>
+
+  <h2>Player</h2>
+  <p>
+    The playback controls and waveform area used to audition the track and move
+    through time.
+  </p>
+
+  <h2>Live mode</h2>
+  <p>
+    A mode where visuals react to microphone or MIDI input instead of a
+    prerecorded audio file.
+  </p>
+
+  <h2>Export</h2>
+  <p>
+    The process of recording the stage to an image or video file.
+  </p>
+</DocsLayout>

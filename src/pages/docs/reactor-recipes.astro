@@ -1,0 +1,58 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Reactor recipes"
+  description="Practical mappings you can build quickly without guessing which property to drive."
+>
+  <p>
+    The fastest way to get better results with reactors is to bind them to a
+    small number of high-impact properties. These recipes are good starting
+    points, not rigid rules.
+  </p>
+
+  <h2>Bass-driven spectrum</h2>
+  <ol>
+    <li>Create a reactor covering the low end of the spectrum.</li>
+    <li>Add a <a href="/docs/displays">Bar Spectrum</a> display.</li>
+    <li>Bind the reactor to height, scale, or amplitude.</li>
+    <li>Raise smoothing until the motion feels punchy rather than jittery.</li>
+  </ol>
+
+  <h2>Glow on the beat</h2>
+  <ol>
+    <li>Create a reactor tuned to kick or snare energy.</li>
+    <li>Add a <a href="/docs/effects">Bloom</a> effect to the scene.</li>
+    <li>Bind the reactor to intensity or threshold.</li>
+    <li>Keep the range modest so the image breathes instead of washing out.</li>
+  </ol>
+
+  <h2>Floating title text</h2>
+  <ol>
+    <li>Add a Text display for your artist name or track title.</li>
+    <li>Create a midrange reactor.</li>
+    <li>Bind the reactor to Y position, scale, or letter spacing.</li>
+    <li>Use low strength and high smoothing for a soft drift.</li>
+  </ol>
+
+  <h2>Background motion without distraction</h2>
+  <p>
+    Put a background display such as Tunnel, Mesh Grid, or Noise in its own
+    scene. Drive rotation, offset, or distortion with a broad full-range
+    reactor. This gives the frame motion without competing with your main
+    foreground element.
+  </p>
+
+  <h2>One reactor, many bindings</h2>
+  <p>
+    Reuse the same bass, mid, and high reactors across multiple displays and
+    effects. Shared reactors make the composition feel coordinated and are much
+    easier to tune than a different reactor for every property.
+  </p>
+
+  <div class="callout">
+    If the motion feels chaotic, the fix is usually fewer bindings and more
+    smoothing, not more reactors.
+  </div>
+</DocsLayout>
